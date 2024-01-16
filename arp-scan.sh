@@ -13,9 +13,9 @@ is_known_mac() {
 
 # Function to notify about a new device
 notify_new_device() {
-   # echo "New device connected with MAC address: $1" #to test in terminal, remove the # infront of echo
-    curl -d "New device connected with MAC address: $1" ntfy.sh/New_Device_Alert
-    # Add any notification mechanism you prefer here (e.g., i am using ntfy service)
+   # echo "New device connected with MAC address: $1" #to test in terminal, remove the # in front of echo
+    curl -d "New device connected with MAC address: $1" ntfy.sh/New_Device
+    # Add any notification mechanism you prefer here (e.g., I am using ntfy service)
 }
 
 # Continuous monitoring loop
