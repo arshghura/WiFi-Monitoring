@@ -14,15 +14,15 @@ Follow the following simple steps.
 - open the app and you may find a '+' icon to add a subscription topic. give any name and create a topic.
 
 - now, configure your device
-- Boot your device and create a bash file, copy arp.sh into your home directory.
+- Boot your device and create a bash file, copy arp-scan.sh into your home directory.
 - check if you have the ARP-SCAN package run [arp-scan -h] if nothing is returned run [sudo apt-get install arp-scan] to install the package.
 - create a text file (give it any name and copy the file path)
-- edit the arp.sh file and change the file path with the file path that you have created in the previous step.
+- edit the arp-scan.sh file and change the file path with the file path that you have created in the previous step.
 - change the interface with the interface yo9u are connected to.
 - edit line 17, change the subscribed topic ( ntfy.sh/New_Device ) with your topic.
 - to run and see this working remove the # from line 16 and save the file (remember to put # back when you are running this script when the device boots up).
-- give execution permission by [chmod +x arp.sh]
-- execute the shell script by ./arp.sh in the terminal and see the results. these are the current MAC address of the devices in your network.
+- give execution permission by [chmod +x arp-scan.sh]
+- execute the shell script by ./arp-scan.sh in the terminal and see the results. these are the current MAC address of the devices in your network.
 
  that's it, you are pretty much ready to test this.
  when you run the script, you will get a push notification on your phone with all the MAC addresses that are present in the network
